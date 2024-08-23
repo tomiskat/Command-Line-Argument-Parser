@@ -1,0 +1,11 @@
+image: maven:latest
+
+stages:
+  - test
+
+library-test:
+  stage: test
+  before_script:
+    - cd library
+  script:
+    - mvn test
