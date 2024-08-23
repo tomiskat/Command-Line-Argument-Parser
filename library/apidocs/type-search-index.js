@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"clap","l":"ArgumentBuilder"},{"p":"clap","l":"ArgumentException"},{"p":"clap","l":"IntegerArgument"},{"p":"clap","l":"Manager"},{"p":"clap","l":"SimpleArgument"},{"p":"clap","l":"StringArgument"},{"p":"clap","l":"Validator"}];updateSearchResults();
