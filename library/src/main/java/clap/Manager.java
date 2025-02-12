@@ -1,5 +1,8 @@
 package clap;
 
+import clap.exceptions.ArgumentException;
+import clap.arguments.*;
+
 import java.util.*;
 
 /**

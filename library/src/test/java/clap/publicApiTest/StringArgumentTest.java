@@ -1,6 +1,9 @@
 package clap.publicApiTest;
 
 import clap.*;
+import clap.arguments.SimpleArgument;
+import clap.arguments.StringArgument;
+import clap.exceptions.ArgumentException;
 import org.junit.jupiter.api.*;
 
 import java.util.stream.Stream;

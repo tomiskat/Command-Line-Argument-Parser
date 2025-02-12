@@ -1,4 +1,8 @@
-package clap;
+package clap.arguments;
+
+import clap.exceptions.ArgumentException;
+import clap.Manager;
+import clap.Validator;
 
 /**
  * Class to represent Integer argument
@@ -9,7 +13,7 @@ public final class IntegerArgument extends ParamsArgument<Integer> {
      * Constructor for IntegerArgument
      * @param owner Manager that owns this argument
      */
-    IntegerArgument(Manager owner) {
+    public IntegerArgument(Manager owner) {
         super(owner);
     }
 
@@ -17,7 +21,7 @@ public final class IntegerArgument extends ParamsArgument<Integer> {
      * {@inheritDoc}
      */
     @Override
-    void setValue(String value) throws ArgumentException {
+    public void setValue(String value) throws ArgumentException {
         String[] values = splitValue(value);
         Integer[] intValues = parseValues(values);
         validateValues(intValues);

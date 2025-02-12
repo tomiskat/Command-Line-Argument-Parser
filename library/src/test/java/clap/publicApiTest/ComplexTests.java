@@ -7,9 +7,12 @@ package clap.publicApiTest;
 
 import clap.*;
 
+import clap.exceptions.ArgumentException;
 import org.junit.jupiter.api.*;
 
 import java.util.*;
+import clap.arguments.*;
+
 
 import static org.junit.jupiter.api.Assertions.*;
 

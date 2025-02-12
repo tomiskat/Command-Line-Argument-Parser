@@ -1,4 +1,4 @@
-package clap;
+package clap.exceptions;
 
 /**
  * Represents an exception that is thrown when an argument error occurs.

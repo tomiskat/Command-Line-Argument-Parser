@@ -1,4 +1,6 @@
-package clap;
+package clap.arguments;
+
+import clap.exceptions.ArgumentException;
 
 /**
  * Provides enhanced syntax for the creation of arguments.
@@ -19,7 +21,7 @@ public final class ArgumentBuilder<T extends SimpleArgument> {
      * The constructor of the builder.
      * @param argument The argument that is being built
      */
-    ArgumentBuilder(T argument) {
+    public ArgumentBuilder(T argument) {
         this.argument = argument;
     }
 

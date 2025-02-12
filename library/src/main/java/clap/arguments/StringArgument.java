@@ -1,4 +1,8 @@
-package clap;
+package clap.arguments;
+
+import clap.exceptions.ArgumentException;
+import clap.Manager;
+import clap.Validator;
 
 /**
  * Class to represent an argument with a string parameters.
@@ -8,7 +12,7 @@ public final class StringArgument extends ParamsArgument<String> {
      * Constructor for StringArgument
      * @param owner Manager that owns this argument
      */
-    StringArgument(Manager owner) {
+    public StringArgument(Manager owner) {
         super(owner);
     }
 
@@ -16,7 +20,7 @@ public final class StringArgument extends ParamsArgument<String> {
      * {@inheritDoc}
      */
     @Override
-    void setValue(String value) throws ArgumentException {
+    public void setValue(String value) throws ArgumentException {
         String[] values = splitValue(value);
         validateValues(values);
         parameters = values;

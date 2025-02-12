@@ -1,4 +1,8 @@
-package clap;
+package clap.arguments;
+
+import clap.exceptions.ArgumentException;
+import clap.Manager;
+import clap.Validator;
 
 import java.util.regex.Pattern;
 
@@ -36,7 +40,7 @@ class ParamsArgument<T> extends SimpleArgument {
      * Constructor of the argument with parameters.
      * @param owner the {@link Manager} of the argument
      */
-    ParamsArgument(Manager owner) {
+    public ParamsArgument(Manager owner) {
         super(owner);
     }
 

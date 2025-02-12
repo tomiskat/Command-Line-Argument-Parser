@@ -1,4 +1,7 @@
-package clap;
+package clap.arguments;
+
+import clap.exceptions.ArgumentException;
+import clap.Manager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +18,7 @@ public class SimpleArgument {
     /**
      * The names of the argument.
      */
-    List<String> names = new ArrayList<>();
+    public List<String> names = new ArrayList<>();
 
     /**
      * The description of the argument.
@@ -31,7 +34,7 @@ public class SimpleArgument {
      * The constructor of the argument.
      * @param owner The manager which holds this argument
      */
-    SimpleArgument(Manager owner) {
+    public SimpleArgument(Manager owner) {
         this.owner = owner;
     }
 
@@ -39,7 +42,7 @@ public class SimpleArgument {
      * Accepts value from the command line as a string, converts it and stores it.
      * @param value The new value of the argument
      */
-    void setValue(String value) throws ArgumentException {
+    public void setValue(String value) throws ArgumentException {
         argIsSet = true;
     };
 
